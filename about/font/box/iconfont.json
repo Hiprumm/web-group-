@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "659167",
+      "name": "ic_share_2",
+      "font_class": "icshare2",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "18964862",
+      "name": "条形图",
+      "font_class": "tiaoxingtu",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "20009325",
+      "name": "shield盾牌",
+      "font_class": "shielddunpai",
+      "unicode": "e6eb",
+      "unicode_decimal": 59115
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "42191240",
+      "name": "arrow-right-s-line",
+      "font_class": "arrow-right-s-line",
+      "unicode": "e747",
+      "unicode_decimal": 59207
+    }
+  ]
+}

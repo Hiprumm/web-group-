@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12577281",
+      "name": "T03_02下箭头_xjt",
+      "font_class": "T_xiajiantou_xjt",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    }
+  ]
+}

@@ -1,0 +1,985 @@
+html {  
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.c{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: background-color 3.5s ease;
+    z-index: 1000;
+}
+
+.load{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transform: scale(2);
+}
+
+.t{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    animation: load 3s linear infinite;
+}
+
+.t::after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(2, 180, 249);
+}
+
+.t:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.t:nth-child(2){
+    animation-delay: 0.15s;
+}
+
+.t:nth-child(3){
+    animation-delay: 0.25s;
+}
+
+.t:nth-child(4){
+    animation-delay: 0.35s;
+}
+
+.t:nth-child(5){
+    animation-delay: 0.55s;
+}
+
+.t:nth-child(6){
+    animation-delay: 0.8s;
+}
+
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(-350deg);
+    }
+    79%{
+        transform: rotate(-359deg);
+        opacity: 1;
+    }
+    80%{
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+}
+/**/
+.nav{
+    position: fixed;
+    top: 0;
+    width:100%;
+    height:75px;
+    padding: 20px 0;
+    box-shadow: none;
+    transition: padding 0.25s, box-shadow 0.25s;
+    line-height: 75px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(2, 180, 249);
+    z-index: 100;
+}
+
+.nav .main {
+    position: relative;
+    width: 1700px;
+    height: 75px;
+    margin: 0 auto;
+}
+.nav .main .logo{
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 75px;
+}
+
+.nav .main .logo img{
+    position: relative;
+    left: 12px;
+    top: 14px;
+}
+
+.nav .main .list{
+    position: relative;
+    float: left;
+    width: 615px;
+    height: 75px;
+    margin-left: 45%;
+}
+
+.nav .main .list li{
+    position: relative;
+    display: inline;
+    margin-right: 45px;
+}
+
+.nav .main .list span{
+    color:white;
+    transition: color 0.25s;
+}
+
+.nav .main .search{
+    position: relative;
+    left: -20px;
+    top: 3px;
+    float: left;
+    width: 0px;
+    height: 0px;
+}
+
+.nav .main .search span{
+    position: relative;
+    bottom: 2px;
+    color: white;
+    transition: color 0.25s;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav .main .list a{
+    color: white;
+    transition: color 0.25s;
+}
+
+.nav .main .list a:hover{
+    color: rgb(41, 41, 41);
+}
+
+.nav .main .list a:hover span{
+    color: rgb(41, 41, 41);
+}
+
+.nav .main .search span:hover{
+    color: rgb(41, 41, 41);
+}
+
+.nav .main .list .drop li a{
+    color: black;
+}
+
+.nav .main .list .one .drop{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff; 
+    width: 375px;
+    height: 150px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, top 0.3s ease;
+    z-index: 1;
+}
+
+.nav .main .list .one .drop li{
+    display: block;
+    width: 375px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.nav .main .list .one .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .one .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .one .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .one .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+
+.nav .main .list .two .drop{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff; 
+    width: 400px;
+    height: 350px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, top 0.3s ease;
+    z-index: 1;
+}
+
+.nav .main .list .two .drop li{
+    display: block;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.nav .main .list .two .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .two .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .two .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .two .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+
+.nav .main .list .three .drop{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff; 
+    width: 300px;
+    height: 250px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, top 0.3s ease;
+    z-index: 1;
+}
+
+.nav .main .list .three .drop li{
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.nav .main .list .three .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .three .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .three .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .three .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+
+.nav .main .list .four .drop{
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    background-color: #ffffff; 
+    width: 1015px;
+    height: 350px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, top 0.3s ease;
+    z-index: 1;
+}
+
+.nav .main .list .four .drop ul{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+}
+
+.nav .main .list .four .drop li{
+    display: block;
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.nav .main .list .four .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .four .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .four .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .four .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+/**/
+.searchbox{
+    position: fixed;
+    top: 0;
+    left: 1250px;
+    width: 300px;
+    height: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease,top 0.3s ease;
+}
+
+.searchbox::-webkit-scrollbar {
+    width: 6px;
+}
+  
+.searchbox::-webkit-scrollbar-track {
+    background: rgb(115, 114, 116); 
+}
+   
+.searchbox::-webkit-scrollbar-thumb {
+    background: rgba(65, 64, 66, 0.6); 
+}
+  
+.searchbox::-webkit-scrollbar-thumb:hover {
+    background: rgba(65, 64, 66, 0.8); 
+}
+
+.searchbox input[type="text"]{
+    width: 295px;
+    height: 30px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 3px solid transparent;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.searchbox input[type="text"]:focus{
+    border: 3px solid rgb(65, 64, 66);
+}
+
+.searchbox li{
+    padding: 10px;  
+    background-color: rgba(2, 180, 249,0.6);  
+    margin-bottom: 10px;  
+    border-radius: 4px;  
+    transition: background-color 0.3s;  
+}
+
+.searchbox li:hover{
+    background-color: rgba(2, 180, 249, 0.8); 
+}
+
+.searchbox li a{
+    color: rgb(65, 64, 66);
+}
+/**/
+.banner{
+    position: relative;
+    width: 100%;
+    height: 425px;
+    background-color: rgb(2, 180, 249);
+}
+
+.banner .box{
+    width: 1684px;
+    height: 425px;
+    margin: 0 auto;
+    background-color: rgb(2, 180, 249);
+}
+.banner .box h2{
+    position: relative;
+    top: 200px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.banner .box p{
+    position: relative;
+    top: 300px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.banner .box span{
+    position: relative;
+    font-size: 20px;
+    margin:0 22px 0 12px;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    width: 1700px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.text1 {
+    position: relative;
+    flex: 1; 
+    left: 300px;
+    top: 40px;
+    padding-right: 20px; 
+}
+
+.text1 h3{
+    font-size:35px;
+    color: rgb(65, 64, 66);
+}
+
+.container1 .text1 button{
+    position: relative;
+    top: 20px;
+    left: 0px;
+    width: 175px;
+    height: 60px;
+    color: rgb(65, 64, 66);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(180, 236, 97);
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+    border: 3px solid transparent;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease;
+    cursor: pointer;
+}
+
+.container1 .text1 button:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+.image1 img {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    width: 60%;
+    height: auto;
+}
+
+.container2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 100px;
+    width: 100%;
+    height: 520px;
+    background-color: rgb(240 250 255);
+}
+
+.text-left{
+    position: relative;
+    top: 10px;
+    left: 290px;
+    text-align: left;
+}
+
+.text-left h2{
+    font-size: 35px;
+    color: rgb(65, 64, 66);
+}
+
+.text-right{
+    position: relative;
+    left: 530px;
+    width: 650px;
+    height: auto;
+}
+
+.text-right h2{
+    font-size: 35px;
+    color: rgb(65, 64, 66);
+}
+
+.text-right i{
+    color: rgb(65, 64, 66);
+}
+
+.text-right .swiper-container {
+    position: relative;
+    top: 15px;
+    left: -100px;
+    width: 600px;
+    height: 220px;
+    margin: 20px auto;
+}
+
+.text-right .swiper-slide {
+    font-size: 18px;
+    background: rgb(240 250 255);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.wordright{
+    position: relative;
+    top: 40px;
+    left: -255px;
+    width: 390px;
+    height: 50px;
+}
+
+.wordright h6{
+    font-size: 16px;
+}
+
+.wordright i{
+    font-size: 14px;
+}
+
+.container3{
+    position: relative;
+    height: 700px;
+}
+
+.article-right{
+    position: relative; 
+    display: inline-block;
+    left: 200px;
+    top: -300px;
+    width: 800px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.article-right h2{
+    position: relative;
+    left: -30px;
+    top: 80px;
+    font-size: 35px;
+    color: rgb(65, 64, 66);
+    margin: 25px 0;
+}
+
+.article-right p{
+    color: rgb(115,114,115);
+}
+
+.login-left1{
+    position: relative;
+    top: 105px;
+    left: -30px;
+    width: 1000px;
+    height: 0px;
+}
+
+.login-left1 input{
+    width: 200px;
+    height: 35px;
+}
+
+.login-right1{
+    position: relative;
+    top: 88px;
+    left: 200px;
+    width: 1000px;
+    height: 0px;
+}
+
+.login-right1 input{
+    width: 200px;
+    height: 35px;
+}
+
+.login-left2{
+    position: relative;
+    top: 150px;
+    left: -30px;
+    width: 1000px;
+    height: 0px;
+}
+
+.login-left2 input{
+    width: 200px;
+    height: 35px;
+}
+
+.login-right2{
+    position: relative;
+    top: 133px;
+    left: 200px;
+    width: 1000px;
+    height: 0px;
+}
+
+.login-right2 input{
+    width: 200px;
+    height: 35px;
+}
+
+.login-info{
+    position: relative;
+    top: 210px;
+    left: -30px;
+    width: 1000px;
+    height: 0px;
+}
+
+.login-info textarea{
+    width: 430px;
+    height: 110px;
+}
+
+.send button{
+    position: relative;
+    left: -30px;
+    top: 330px;
+    width: 150px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(2 180 249);
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+    border: 3px solid transparent;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease;
+    cursor: pointer;
+}
+
+.send button:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+/**/
+.bottom{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box{
+    width: 1684px;
+    height: 650px;
+    margin: 0 auto;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .bottom1{
+    position: relative;
+    display: flex;
+    top: 100px;
+    width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: rgb(34, 53, 73);
+}
+#map{
+    position: relative;
+    top: 75px;
+    margin: 0 auto;
+    width: 1200px;
+    height: 175px;
+}
+
+.bottom .box .left{
+    display: inline-block;
+    width: 375px;
+    height: 300px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .center{
+    display: inline-block;
+    width: 375px;
+    height: 300px;
+    margin:0 37px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .right{
+    display: inline-block;
+    width: 375px;
+    height: 300px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .left p{
+    position: relative;
+    top: 20px;
+    padding: 0 285px 0 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottom .box .left .left1{
+    position: relative;
+    display: inline-block;
+    width: 325px;
+    height: 120px;
+    top: 60px;
+    text-align: left;
+    font-size: 16px;
+    color: rgb(200, 200, 200);
+}
+
+.bottom .box .left .left1 li{
+    margin-bottom: 12px;
+}
+
+.bottom .box .left .icon{
+    position: relative;
+    display: inline-block;
+    top: 32px;
+    left: -3px;
+    width: 36px;
+    height: 120px;
+}
+
+.bottom .box .left .icon span{
+    font-size: 25px;
+    color: rgb(180, 236, 97);
+}
+
+.bottom .box .left .left2{
+    position: relative;
+    top: 35px;
+    left: -8px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.bottom .box .left .left2 span{
+    font-size: 25px;
+    margin-right: 20px;
+    color: rgb(115,114,115);
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.bottom .box .left .left2 .icon-facebook:hover{
+    color: rgb(59, 89, 152);
+}
+.bottom .box .left .left2 .icon-twitter-fill:hover{
+    color: rgb(29, 161, 242);
+}
+.bottom .box .left .left2 .icon-instagram:hover{
+    color: rgb(237, 73, 90);
+}
+.bottom .box .left .left2 .icon-google:hover{
+    color: rgb(219, 68, 55);
+}
+.bottom .box .left .left2 .icon-pinterest:hover{
+    color: rgb(189, 8, 28);
+}
+.bottom .box .left .left2 .icon-linkedin:hover{
+    color: rgb(0, 119, 181);
+}
+
+.bottom .box .center .center1{
+    position: relative;
+    width: 325px;
+    height: 200px;
+    top: 59px;
+    left: 5px;
+    color: rgb(200, 200, 200);
+}
+
+.bottom .box .center p{
+    position: relative;
+    padding: 0 285px 0 0;
+    top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottom .box .center .center1 li{
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.bottom .box .center .center1 li a{
+    color: rgb(163, 217, 95);
+}
+
+.bottom .box .center .center1 li a:hover{
+    color: rgb(2, 180, 249);
+}
+
+.bottom .box .center .center1 span{
+    font-size: 18px;
+    color: rgb(200, 200, 200);
+    margin-right: 20px;
+}
+
+.bottom .box .right .p1{
+    position: relative;
+    padding: 0 330px 0 0;
+    top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottom .box .right .right1{
+    position: relative;
+    width: 375px;
+    height: 50px;
+    top: 60px;
+    color: rgb(200, 200, 200);
+}
+
+.bottom .box .right .dingyue{
+    position: relative;
+    top: 75px;
+    width: 375px;
+    height: 50px;
+    text-align: left;
+}
+
+.bottom .box .right .dingyue input[type=text]{
+    width: 375px;
+    height: 45px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.bottom .box .right .dingyue input[type=submit]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 45px;
+    font-weight: 600;
+    background-color: rgb(2, 180, 249);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.bottom .box .right .dingyue input[type=submit]:hover{
+    background-color: rgb(0, 150, 224);
+}
+
+.bottom .box .bottom1 .divider{
+    position: relative;
+    top: 31px;
+    width: 375px;
+    height: 1px;
+    background: linear-gradient(to right, rgb(18,116,161) 10%, rgb(45,63,82) 10%);
+}
+/**/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+#top{
+    position: fixed;
+    bottom: -75px;
+    right: 50px;
+    width: 65px;
+    height: 65px;
+    border: none;
+    outline: none;
+    background-color: rgb(2, 180, 249);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: bottom 0.25s;
+    z-index: 99;
+}
+
+#top span{
+    color: white;
+    font-size: 35px;
+}

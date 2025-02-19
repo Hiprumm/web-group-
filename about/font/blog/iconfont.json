@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5651479",
+      "name": "个人",
+      "font_class": "geren",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "17868591",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "20722825",
+      "name": "更新日志",
+      "font_class": "gengxinrizhi",
+      "unicode": "e7d7",
+      "unicode_decimal": 59351
+    }
+  ]
+}

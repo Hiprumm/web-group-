@@ -1,0 +1,981 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.c{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: background-color 3.5s ease;
+    z-index: 1000;
+}
+
+.load{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transform: scale(2);
+}
+
+.t{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    animation: load 3s linear infinite;
+}
+
+.t::after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(2, 180, 249);
+}
+
+.t:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.t:nth-child(2){
+    animation-delay: 0.15s;
+}
+
+.t:nth-child(3){
+    animation-delay: 0.25s;
+}
+
+.t:nth-child(4){
+    animation-delay: 0.35s;
+}
+
+.t:nth-child(5){
+    animation-delay: 0.55s;
+}
+
+.t:nth-child(6){
+    animation-delay: 0.8s;
+}
+
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(-350deg);
+    }
+    79%{
+        transform: rotate(-359deg);
+        opacity: 1;
+    }
+    80%{
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+}
+/**/
+.nav{
+    position: fixed;
+    top: 0;
+    width:100%;
+    height:75px;
+    padding: 20px 0;
+    box-shadow: none;
+    transition: padding 0.25s, box-shadow 0.25s;
+    line-height: 75px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(2, 180, 249);
+    z-index: 100;
+}
+
+.nav .main {
+    position: relative;
+    width: 1700px;
+    height: 75px;
+    margin: 0 auto;
+}
+.nav .main .logo{
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 75px;
+}
+
+.nav .main .logo img{
+    position: relative;
+    left: 12px;
+    top: 14px;
+}
+
+.nav .main .list{
+    position: relative;
+    float: left;
+    width: 615px;
+    height: 75px;
+    margin-left: 45%;
+}
+
+.nav .main .list li{
+    position: relative;
+    display: inline;
+    margin-right: 45px;
+}
+
+.nav .main .list span{
+    color:white;
+    transition: color 0.25s;
+}
+
+.nav .main .search{
+    position: relative;
+    float: left;
+    width: 0px;
+    height: 0px;
+}
+
+.nav .main .search span{
+    position: relative;
+    bottom: 2px;
+    color: white;
+    transition: color 0.25s;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav .main .list a{
+    color: white;
+    transition: color 0.25s;
+}
+
+.nav .main .list a:hover{
+    color: rgb(41, 41, 41);
+}
+
+.nav .main .list a:hover span{
+    color: rgb(41, 41, 41);
+}
+
+.nav .main .search span:hover{
+    color: rgb(41, 41, 41);
+}
+
+.nav .main .list .drop li a{
+    color: black;
+}
+
+.nav .main .list .one .drop{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff; 
+    width: 375px;
+    height: 150px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, top 0.3s ease;
+    z-index: 1;
+}
+
+.nav .main .list .one .drop li{
+    display: block;
+    width: 375px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.nav .main .list .one .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .one .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .one .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .one .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+
+.nav .main .list .two .drop{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff; 
+    width: 400px;
+    height: 350px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, top 0.3s ease;
+    z-index: 1;
+}
+
+.nav .main .list .two .drop li{
+    display: block;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.nav .main .list .two .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .two .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .two .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .two .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+
+.nav .main .list .three .drop{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff; 
+    width: 300px;
+    height: 250px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, top 0.3s ease;
+    z-index: 1;
+}
+
+.nav .main .list .three .drop li{
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.nav .main .list .three .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .three .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .three .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .three .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+
+.nav .main .list .four .drop{
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    background-color: #ffffff; 
+    width: 1015px;
+    height: 350px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, top 0.3s ease;
+    z-index: 1;
+}
+
+.nav .main .list .four .drop ul{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+}
+
+.nav .main .list .four .drop li{
+    display: block;
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.nav .main .list .four .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .four .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .four .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .four .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+/**/
+.searchbox{
+    position: fixed;
+    top: 0;
+    left: 1250px;
+    width: 300px;
+    height: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(2, 180, 249, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease,top 0.3s ease;
+}
+
+.searchbox::-webkit-scrollbar {
+    width: 6px;
+}
+  
+.searchbox::-webkit-scrollbar-track {
+    background: rgb(0, 119, 181); 
+}
+   
+.searchbox::-webkit-scrollbar-thumb {
+    background: rgba(2, 180, 249, 0.6); 
+}
+  
+.searchbox::-webkit-scrollbar-thumb:hover {
+    background: rgba(2, 180, 249, 0.8); 
+}
+
+.searchbox input[type="text"]{
+    width: 295px;
+    height: 30px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 3px solid transparent;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.searchbox input[type="text"]:focus{
+    border: 3px solid rgb(0, 150, 224);
+}
+
+.searchbox li{
+    padding: 10px;  
+    background-color: white;  
+    margin-bottom: 10px;  
+    border-radius: 4px;  
+    transition: background-color 0.3s;  
+}
+
+.searchbox li:hover{
+    background-color: rgba(255, 255, 255, 0.6); 
+}
+
+.searchbox li a{
+    color: rgb(41, 41, 41);
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 425px;
+    background-color: rgb(2, 180, 249);
+}
+
+.banner .box{
+    width: 1684px;
+    height: 425px;
+    margin: 0 auto;
+    background-color: rgb(2, 180, 249);
+}
+.banner .box h2{
+    position: relative;
+    top: 200px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.banner .box p{
+    position: relative;
+    top: 300px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.banner .box span{
+    position: relative;
+    font-size: 20px;
+    margin:0 22px 0 12px;
+}
+/**/
+.content{
+    width: 100%;
+    height: 1000px;
+}
+
+.content .box{
+    width: 1350px;
+    height: 1000px;
+    margin: 60px auto;
+}
+
+.content .box .left{
+    position: relative;
+    display: inline-block;
+    width: 800px;
+    height: 1000px;
+}
+
+.content .box .left .title{
+    width: 660px;
+    height: 150px;
+    margin-left: 120px;
+    text-align: left;
+}
+
+.content .box .left .title h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: rgb(65, 64, 66);
+    font-size: 40px;
+}
+
+.content .box .left .title p{
+    color: rgb(115,114,115);
+    font-size: 18px;
+}
+
+.content .box .left .lable{
+    width: 750px;
+    height: 500px;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: rgb(115, 114, 115);
+}
+
+.content .box .left .lable label{
+    display: inline-block;
+    width: 320px;
+    margin: 15px 0;
+    margin-right: 26px;
+}
+.content .box .left .lable input[type="text"]{
+    position: relative;
+    width: 320px;
+    height: 65px;
+    padding-left: 10px;
+    margin-right: 26px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+.content .box .left .lable textarea{
+    position: relative;
+    width: 670px;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+.content .box .left .lable input[type="submit"]{
+    position: relative;
+    top: 15px;
+    width: 150px;
+    height: 65px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    color: white;
+    background-color: rgb(2, 180, 249);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease;
+}
+
+.content .box .left .lable input[type="submit"]:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+.content .box .right{
+    position: relative;
+    display: inline-block;
+    top: -43px;
+    left: 100px;
+    width: 350px;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.content .box .right .h2{
+    color: rgb(65, 64, 66);
+}
+
+.content .box .right .divider{
+    position: relative;
+    top: 15px;
+    width: 350px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(2,180,249,0.6) 12%, rgba(115,114,115,0.2) 12%);
+}
+
+.content .box .right .up{
+    width: 300px;
+    height: 195px;
+}
+
+.content .box .right .up .aup{
+    width: 260px;
+    height: 75px;
+    margin-left: 50px;
+    margin-top: 45px;
+}
+
+.content .box .right .up span{
+    position: relative;
+    top: 45px;
+    left: 0;
+    float: left;
+    font-size: 35px;
+    color: rgb(180, 236, 97);  
+}
+
+.content .box .right .up .aup p{
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.content .box .right .middle1{
+    width: 300px;
+    height: 195px;
+}
+.content .box .right .middle1 .m1{
+    width: 260px;
+    height: 75px;
+    margin-left: 50px;
+    margin-top: 45px;
+}
+
+.content .box .right .middle1 span{
+    position: relative;
+    top: 45px;
+    left: 0;
+    float: left;
+    font-size: 30px;
+    color: rgb(180, 236, 97);  
+}
+
+.content .box .right .middle1 .m1 p{
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.content .box .right .middle2{
+    width: 300px;
+    height: 195px;
+}
+
+.content .box .right .middle2 .m2{
+    width: 260px;
+    height: 75px;
+    margin-left: 50px;
+    margin-top: 45px;
+}
+
+.content .box .right .middle2 span{
+    position: relative;
+    top: 45px;
+    left: 0;
+    float: left;
+    font-size: 30px;
+    color: rgb(180, 236, 97);  
+}
+
+.content .box .right .middle2 .m2 p{
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.content .box .right .down{
+    width: 300px;
+    height: 195px;
+}
+
+.content .box .right .down .adown{
+    width: 325px;
+    height: 75px;
+    margin-top: 38px;
+}
+
+.content .box .right .down .adown span{
+    font-size: 25px;
+    margin-right: 20px;
+    color: rgb(115, 114, 115);
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.content .box .right .down .adown .icon-facebook:hover{
+    color: rgb(59, 89, 152);
+}
+.content .box .right .down .adown .icon-twitter-fill:hover{
+    color: rgb(29, 161, 242);
+}
+.content .box .right .down .adown .icon-instagram:hover{
+    color: rgb(237, 73, 90);
+}
+.content .box .right .down .adown .icon-google:hover{
+    color: rgb(219, 68, 55);
+}
+.content .box .right .down .adown .icon-pinterest:hover{
+    color: rgb(189, 8, 28);
+}
+.content .box .right .down .adown .icon-linkedin:hover{
+    color: rgb(0, 119, 181);
+}
+/**/
+#map{
+    margin: 0 auto;
+    width: 100%;
+    height: 225px;
+}
+/**/
+.bottom{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box{
+    width: 1684px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .bottom1{
+    position: relative;
+    display: flex;
+    top: 74px;
+    width: 1380px;
+    height: 400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .left{
+    display: inline-block;
+    width: 325px;
+    height: 300px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .center{
+    display: inline-block;
+    width: 325px;
+    height: 300px;
+    background-color: rgb(34, 53, 73);
+    margin: 0 20px;
+}
+
+.bottom .box .add{
+    display: inline-block;
+    width: 325px;
+    height: 300px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .add p{
+    position: relative;
+    padding: 0 200px 0 0;
+    top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottom .box .right{
+    display: inline-block;
+    width: 325px;
+    height: 300px;
+    background-color: rgb(34, 53, 73);
+    margin: 0 20px;
+}
+
+.bottom .box .left p{
+    position: relative;
+    top: 20px;
+    padding: 0 200px 0 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottom .box .left .left1{
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 120px;
+    top: 60px;
+    text-align: left;
+    font-size: 16px;
+    color: rgb(200, 200, 200);
+}
+
+.bottom .box .left .left1 li{
+    margin-bottom: 12px;
+}
+
+.bottom .box .left .icon{
+    position: relative;
+    display: inline-block;
+    top: 32px;
+    left: -3px;
+    width: 36px;
+    height: 120px;
+}
+
+.bottom .box .left .icon span{
+    font-size: 25px;
+    color: rgb(180, 236, 97);
+}
+
+.bottom .box .left .left2{
+    position: relative;
+    top: 35px;
+    left: -8px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.bottom .box .left .left2 span{
+    font-size: 25px;
+    margin-right: 20px;
+    color: rgb(115,114,115);
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.bottom .box .left .left2 .icon-facebook:hover{
+    color: rgb(59, 89, 152);
+}
+.bottom .box .left .left2 .icon-twitter-fill:hover{
+    color: rgb(29, 161, 242);
+}
+.bottom .box .left .left2 .icon-instagram:hover{
+    color: rgb(237, 73, 90);
+}
+.bottom .box .left .left2 .icon-google:hover{
+    color: rgb(219, 68, 55);
+}
+.bottom .box .left .left2 .icon-pinterest:hover{
+    color: rgb(189, 8, 28);
+}
+.bottom .box .left .left2 .icon-linkedin:hover{
+    color: rgb(0, 119, 181);
+}
+
+.bottom .box .center .center1{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    top: 59px;
+    left: 5px;
+    color: rgb(200, 200, 200);
+}
+
+.bottom .box .center p{
+    position: relative;
+    padding: 0 230px 0 0;
+    top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottom .box .center .center1 li{
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.bottom .box .center .center1 li a{
+    color: rgb(163, 217, 95);
+}
+
+.bottom .box .center .center1 li a:hover{
+    color: rgb(2, 180, 249);
+}
+
+.bottom .box .center .center1 span{
+    font-size: 18px;
+    color: rgb(200, 200, 200);
+    margin-right: 20px;
+}
+
+.bottom .box .right .p1{
+    position: relative;
+    padding: 0 280px 0 0;
+    top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottom .box .right .right1{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    top: 60px;
+    color: rgb(200, 200, 200);
+}
+
+.bottom .box .right .dingyue{
+    position: relative;
+    top: 100px;
+    width: 300px;
+    height: 50px;
+    text-align: left;
+}
+
+.bottom .box .right .dingyue input[type=text]{
+    width: 300px;
+    height: 45px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.bottom .box .right .dingyue input[type=submit]{
+    position: absolute;
+    right: 0;
+    width: 75px;
+    height: 45px;
+    font-weight: 600;
+    background-color: rgb(2, 180, 249);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.bottom .box .right .dingyue input[type=submit]:hover{
+    background-color: rgb(0, 150, 224);
+}
+
+.bottom .box .bottom1 .divider{
+    position: relative;
+    top: 31px;
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(to right, rgb(18,116,161) 10%, rgb(45,63,82) 10%);
+}
+/**/
+
+* {
+    list-style: none;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+#top{
+    position: fixed;
+    bottom: -75px;
+    right: 50px;
+    width: 65px;
+    height: 65px;
+    border: none;
+    outline: none;
+    background-color: rgb(2, 180, 249);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: bottom 0.25s;
+    z-index: 99;
+}
+
+#top span{
+    color: white;
+    font-size: 35px;
+}

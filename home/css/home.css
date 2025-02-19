@@ -1,0 +1,3374 @@
+.ccc{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: background-color 3.5s ease;
+    z-index: 1000;
+}
+
+.load{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transform: scale(2);
+}
+
+.ttt{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    animation: load 3s linear infinite;
+}
+
+.ttt::after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(2, 180, 249);
+}
+
+.ttt:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.ttt:nth-child(2){
+    animation-delay: 0.15s;
+}
+
+.ttt:nth-child(3){
+    animation-delay: 0.25s;
+}
+
+.ttt:nth-child(4){
+    animation-delay: 0.35s;
+}
+
+.ttt:nth-child(5){
+    animation-delay: 0.55s;
+}
+
+.ttt:nth-child(6){
+    animation-delay: 0.8s;
+}
+
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(-350deg);
+    }
+    79%{
+        transform: rotate(-359deg);
+        opacity: 1;
+    }
+    80%{
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+}
+/**/
+.up-top {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(255, 255, 255);
+}
+
+.up {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 100;
+    opacity: 100%;
+    transition: top 0.25s,opacity 0.25s;
+    background-color: rgb(34, 53, 73);
+}
+
+.up .up1{
+    position: relative;
+    width: 1700px;
+    height: 65px;
+    line-height: 65px;
+    margin: 0 auto;
+}
+
+.up .up1 span{
+    font-size: 28px;
+    color: rgb(180, 236, 97);
+}
+
+.up .up1 p{
+    position: relative;
+    display: inline-block;
+    top: -5px;
+    left: 5px;
+    color: rgb(190, 191, 192);
+}
+
+.up .up1 .web{
+    position: relative;
+    display: inline-block;
+    left: 295px;
+}
+
+.up .up1 .web span{
+    margin-right: 25px;
+    font-size: 25px;
+    color: rgb(115, 114, 115);
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.up .web .icon-facebook:hover{
+    color: rgb(59, 89, 152);
+}
+.up .web .icon-twitter-fill:hover{
+    color: rgb(29, 161, 242);
+}
+.up .web .icon-instagram:hover{
+    color: rgb(237, 73, 90);
+}
+.up .web .icon-google:hover{
+    color: rgb(219, 68, 55);
+}
+.up .web .icon-pinterest:hover{
+    color: rgb(189, 8, 28);
+}
+.up .web .icon-linkedin:hover{
+    color: rgb(0, 119, 181);
+}
+
+.nav{
+    position: fixed;
+    top: 65px;
+    width:100%;
+    height:75px;
+    padding: 20px 0;
+    box-shadow: none;
+    transition: padding 0.25s, box-shadow 0.25s, top 0.25s;
+    line-height: 75px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.nav .main {
+    position: relative;
+    width: 1700px;
+    height: 75px;
+    margin: 0 auto;
+}
+.nav .main .logo{
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 75px;
+}
+
+.nav .main .logo img{
+    position: relative;
+    left: 12px;
+    top: 14px;
+}
+
+.nav .main .list{
+    position: relative;
+    float: left;
+    width: 615px;
+    height: 75px;
+    margin-left: 45%;
+}
+
+.nav .main .list li{
+    position: relative;
+    display: inline;
+    margin-right: 45px;
+}
+
+.nav .main .list span{
+    color:rgb(65, 64, 66);
+    transition: color 0.25s;
+}
+
+.nav .main .search{
+    position: relative;
+    float: left;
+    width: 0px;
+    height: 0px;
+}
+
+.nav .main .search span{
+    position: relative;
+    bottom: 2px;
+    color:rgb(65, 64, 66);
+    transition: color 0.25s;
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav .main .list a{
+    color:rgb(65, 64, 66);
+    transition: color 0.25s;
+}
+
+.nav .main .list a:hover{
+    color: rgb(2, 180, 249);
+}
+
+.nav .main .list a:hover span{
+    color: rgb(2, 180, 249);
+}
+
+.nav .main .search span:hover{
+    color: rgb(2, 180, 249);
+}
+
+.nav .main .list .drop li a{
+    color: black;
+}
+
+.nav .main .list .one .drop{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 1;
+    background-color: #ffffff; 
+    width: 375px;
+    height: 150px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.15s ease, top 0.15s ease;
+}
+
+.nav .main .list .one .drop li{
+    display: block;
+    width: 375px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    background-color: #ffffff;
+    transition: background-color 0.15s ease;
+}
+
+.nav .main .list .one .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .one .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .one .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .one .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+
+.nav .main .list .two .drop{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff; 
+    width: 400px;
+    height: 350px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.15s ease, top 0.15s ease;
+    z-index: 1;
+}
+
+.nav .main .list .two .drop li{
+    display: block;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #ffffff;
+    transition: background-color 0.15s ease;
+}
+
+.nav .main .list .two .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .two .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .two .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .two .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+
+.nav .main .list .three .drop{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff; 
+    width: 300px;
+    height: 250px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.15s ease, top 0.15s ease;
+    z-index: 1;
+}
+
+.nav .main .list .three .drop li{
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #ffffff;
+    transition: background-color 0.15s ease;
+}
+
+.nav .main .list .three .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .three .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .three .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .three .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+
+.nav .main .list .four .drop{
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    background-color: #ffffff; 
+    width: 1015px;
+    height: 350px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.15s ease, top 0.15s ease;
+    z-index: 1;
+}
+
+.nav .main .list .four .drop ul{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+}
+
+.nav .main .list .four .drop li{
+    display: block;
+    width: 255px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-weight: 400;
+    background-color: #ffffff;
+    transition: background-color 0.15s ease;
+}
+
+.nav .main .list .four .drop span{
+    opacity: 0;
+    margin-left: 5px;
+    transition: margin-right 0.3s ease,margin-left 0.3s ease,opacity 0.3s ease;
+    color: black;
+}
+
+.nav .main .list .four .drop li:hover{
+    background-color: rgb(191, 221, 114);
+}
+
+.nav .main .list .four .drop a:hover{
+    color: rgb(50, 78, 169);
+}
+
+.nav .main .list .four .drop li:hover span{
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+/**/
+.searchbox{
+    position: fixed;
+    top: 0;
+    left: 1250px;
+    width: 300px;
+    height: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease,top 0.3s ease;
+}
+
+.searchbox::-webkit-scrollbar {
+    width: 6px;
+}
+  
+.searchbox::-webkit-scrollbar-track {
+    background: rgb(115, 114, 116); 
+}
+   
+.searchbox::-webkit-scrollbar-thumb {
+    background: rgba(65, 64, 66, 0.6); 
+}
+  
+.searchbox::-webkit-scrollbar-thumb:hover {
+    background: rgba(65, 64, 66, 0.8); 
+}
+
+.searchbox input[type="text"]{
+    width: 295px;
+    height: 30px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 3px solid transparent;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.searchbox input[type="text"]:focus{
+    border: 3px solid rgb(65, 64, 66);
+}
+
+.searchbox li{
+    padding: 10px;  
+    background-color: rgba(2, 180, 249,0.6);  
+    margin-bottom: 10px;  
+    border-radius: 4px;  
+    transition: background-color 0.3s;  
+}
+
+.searchbox li:hover{
+    background-color: rgba(2, 180, 249, 0.8); 
+}
+
+.searchbox li a{
+    color: rgb(65, 64, 66);
+}
+/**/
+.banner {
+    width: 100%;
+    min-width: 1684px;
+    height: 1000px;
+}
+
+.banner .imgs{
+    position: relative;
+    width: 1684px;
+    height: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner .imgs img{
+    position: relative;
+    top: -110px;
+    left: -120px;
+}
+/**/
+.banner .imgs .consult{
+    position: relative;
+    float: left;
+    top: -950px;
+    right: -990px;
+    width: 410px;
+    height: 660px;
+    background-color: white;
+}
+
+.banner .imgs .consult .title{
+    width: 330px;
+    height: 100px;
+    margin: 35px;
+    font-size: 18px;
+    color: rgb(65, 64, 66);
+}
+
+.banner .imgs .consult .title p{
+    position: relative;
+    top: 15px;
+    font-size: 17px;
+    color: rgb(115, 114, 115);
+}
+
+.banner .imgs .consult .form{
+    width: 340px;
+    height: 400px;
+    margin: 35px;
+    font-size: 17px;
+    color: rgb(161, 161, 161);
+}
+
+.banner .imgs .consult .form label{
+    display: inline-block;
+    margin: 15px 0;
+}
+.banner .imgs .consult .form input[type="submit"]{
+    position: relative;
+    top: 25px;
+    width: 340px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(2, 180, 249);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease;
+}
+
+.banner .imgs .consult .form input[type="submit"]:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+.banner .imgs .consult .form input[type="text"]{
+    position: relative;
+    width: 340px;
+    height: 70px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+.banner .imgs .consult .ad{
+    position: relative;
+    top: -410px;
+    left: -650px;
+    width: 550px;
+    height: 250px;
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+}
+
+.banner .imgs .consult .ad .btn{
+    position: relative;
+    top: 25px;
+    left: 0px;
+    width: 230px;
+    height: 65px;
+    color: rgb(65, 64, 66);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(180, 236, 97);
+    border-radius: 6px;
+    border: 3px solid transparent;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease,transform 0.6s ease;
+    cursor: pointer;
+}
+
+.banner .imgs .consult .ad .btn:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+    color: rgb(2, 180, 249);
+    border-color: rgb(2, 180, 249);
+}
+
+
+.banner .imgs .consult .ad .btn1{
+    position: relative;
+    top: 25px;
+    left: 18px;
+    width: 180px;
+    height: 65px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 6px;
+    border: white solid 3px;
+    cursor: pointer;
+    transition: transform 0.6s ease, color 0.6s ease,border-color 0.6s ease;
+}
+
+.banner .imgs .consult .ad .btn1:hover{
+    transform: scale(1.1);
+    color: rgb(2, 180, 249);
+    border-color: rgb(2, 180, 249);
+}
+/**/
+.content1{
+    width: 100%;
+    height: 600px;
+}
+
+.content1 .content2{
+    width: 1684px;
+    height: 550px;
+    margin:50px auto;
+}
+
+.content1 .content2 .title{
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    width: 820px;
+    height: 150px;
+    text-align: center;
+}
+
+.content1 .content2 .title h1{
+    color: rgb(65, 64, 66);
+    font-size: 40px;
+}
+
+.content1 .content2 .title p{
+    position: relative;
+    top: 10px;
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.content1 .content2 .box{
+    position: relative;
+    display: flex;
+    left: 125px;
+    width: 1425px;
+    height: 400px;
+}
+
+.content1 .content2 .box span{
+    z-index: 1;
+}
+
+.content1 .content2 .box .left{
+    display: inline-block;
+    width: 475px;
+    height: 400px;
+    text-align: center;
+}
+
+.content1 .content2 .box .left .img{
+    position: relative;
+    top: 55px;
+    left: 160px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height: 150px;
+    box-shadow: 0px 0px 15px 12px rgba(0, 0, 0, 0.1);
+    background-color: rgb(49, 146, 229);
+}
+
+.content1 .content2 .box .left .img .quan{
+    position: relative;
+    top:-170px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: rgb(30, 89, 129);
+    transition: transform 0.4s ease,opacity 0.4s ease;
+    transform: scale(1);
+}
+
+.content1 .content2 .box .left .img:hover .quan{
+    transform: scale(0.8);
+    opacity: 1;
+}
+
+.content1 .content2 .box .left .img span{
+    position: relative;
+    color: white;
+    font-size: 66px;
+}
+
+.content1 .content2 .box .left h1{
+    position: relative;
+    top: 85px;
+    color: rgb(65, 64, 66);
+}
+
+.content1 .content2 .box .left p{
+    position: relative;
+    top: 100px;
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.content1 .content2 .box .center{
+    display: inline-block;
+    width: 475px;
+    height: 400px;
+    text-align: center;
+}
+
+.content1 .content2 .box .center .img{
+    position: relative;
+    top: 55px;
+    left: 160px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height: 150px;
+    box-shadow: 0px 0px 15px 12px rgba(0, 0, 0, 0.1);
+    background-color: rgb(49, 146, 229);
+    transform: rotate(-90deg) scale(1, -1);
+}
+
+.content1 .content2 .box .center .img .quan{
+    position: relative;
+    top:-169px;
+    left: 1px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: rgb(30, 89, 129);
+    transition: transform 0.4s ease,opacity 0.4s ease;
+    transform: scale(1);
+}
+
+.content1 .content2 .box .center .img:hover .quan{
+    transform: scale(0.8);
+    opacity: 1;
+}
+
+.content1 .content2 .box .center .img span{
+    position: relative;
+    color: white;
+    font-size: 66px;
+}
+
+.content1 .content2 .box .center h1{
+    position: relative;
+    top: 85px;
+    color: rgb(65, 64, 66);
+}
+
+.content1 .content2 .box .center p{
+    position: relative;
+    top: 100px;
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.content1 .content2 .box .right{
+    display: inline-block;
+    width: 475px;
+    height: 400px;
+    text-align: center;
+}
+
+.content1 .content2 .box .right .img{
+    position: relative;
+    top: 55px;
+    left: 160px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height: 150px;
+    box-shadow: 0px 0px 15px 12px rgba(0, 0, 0, 0.1);
+    background-color: rgb(49, 146, 229);
+}
+
+.content1 .content2 .box .right .img span{
+    position: relative;
+    top: 0px;
+    left: -5px;
+    color: white;
+    font-size: 66px;
+}
+
+
+.content1 .content2 .box .right .img .quan{
+    position: relative;
+    top:-170px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: rgb(30, 89, 129);
+    transition: transform 0.4s ease,opacity 0.4s ease;
+    transform: scale(1);
+}
+
+.content1 .content2 .box .right .img:hover .quan{
+    transform: scale(0.8);
+    opacity: 1;
+}
+
+.content1 .content2 .box .right h1{
+    position: relative;
+    top: 85px;
+    color: rgb(65, 64, 66);
+}
+
+.content1 .content2 .box .right p{
+    position: relative;
+    top: 100px;
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+/**/
+.contact{
+    width: 100%;
+    height:650px;
+}
+
+.contact .box{
+    display: flex;
+    width: 1684px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.contact .box .left{
+    width: 850px;
+    height: 650px;
+    background-color: rgb(240, 250, 255);
+}
+
+.contact .box .left h1{
+    position: relative;
+    top: 165px;
+    left: 80px;
+    font-size: 42px;
+    color: rgb(65, 64, 66);
+}
+
+.contact .box .left .p1{
+    position: relative;
+    top: 200px;
+    left: 80px;
+    width: 620px;
+    height: 30px;
+    color: rgb(65, 64, 66);
+    font-size: 22px;
+}
+
+.contact .box .left .p2{
+    position: relative;
+    top: 245px;
+    left: 80px;
+    width: 650px;
+    height: 30px;
+    font-size: 17px;
+    color: rgb(115, 114, 115);
+}
+
+.contact .box .left button{
+    position: relative;
+    top: 310px;
+    left: 80px;
+    width: 185px;
+    height: 65px;
+    color: rgb(65, 64, 66);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(180, 236, 97);
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+    border: 3px solid transparent;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease;
+    cursor: pointer;
+}
+
+.contact .box .left button:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+.contact .box .right{
+    width: 850px;
+    height: 650px;
+}
+
+.contact .box .right img{
+    width: 842px;
+    height: 650px;
+}
+/**/
+.service{
+    width: 100%;
+    height: 650px;
+}
+
+.service .service1{
+    width: 1684px;
+    height: 550px;
+    text-align: center;
+    margin:50px auto;
+}
+
+.service .service1 .title{
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    width: 820px;
+    height: 150px;
+    text-align: center;
+}
+
+.service .service1 .title h1{
+    color: rgb(65, 64, 66);
+    font-size: 40px;
+}
+
+.service .service1 .title .p1{
+    width: 1050px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    left: -110px;
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+/**/
+.service .service1 .box .left{
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    width: 300px;
+    height: 250px;
+    margin: 0 15px;
+    background-color: rgb(239, 248, 254);
+}
+
+.service .service1 .box .left img{
+    position: relative;
+    float: left;
+    width: 85px;
+    height: auto;
+    top: 20px;
+    left: 15px;
+}
+
+.service .service1 .box .left h2{
+    position: relative;
+    float: left;
+    top: 40px;
+    left: 40px;
+    color: rgb(65, 64, 66);
+}
+
+.service .service1 .box .left .divider1{
+    position: relative;
+    float: left;
+    top: 45px;
+    left: 20px;
+    width: 250px;
+    height: 2px;
+    background-color:rgb(234, 239, 241);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    transform-origin: center;
+}
+
+.service .service1 .box .left .neirong{
+    position: relative;
+    float: left;
+    top: 65px;
+    left: 25px;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(115, 114, 115);
+}
+
+.service .service1 .box .left:hover .divider1{
+    transform: scale(50%);
+    background-color: rgb(198, 228, 248);
+}
+
+.service .service1 .box .center-1{
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    width: 300px;
+    height: 250px;
+    margin: 0 15px;
+    background-color: rgb(239, 248, 254);
+}
+
+.service .service1 .box .center-1 img{
+    position: relative;
+    float: left;
+    width: 85px;
+    height: auto;
+    top: 20px;
+    left: 15px;
+}
+
+.service .service1 .box .center-1 h2{
+    position: relative;
+    float: left;
+    top: 40px;
+    left: 40px;
+    color: rgb(65, 64, 66);
+}
+
+.service .service1 .box .center-1 .divider1{
+    position: relative;
+    float: left;
+    top: 45px;
+    left: 20px;
+    width: 250px;
+    height: 2px;
+    background-color:rgb(234, 239, 241);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    transform-origin: center;
+}
+
+.service .service1 .box .center-1 .neirong{
+    position: relative;
+    float: left;
+    top: 65px;
+    left: 25px;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(115, 114, 115);
+}
+
+.service .service1 .box .center-1:hover .divider1{
+    transform: scale(50%);
+    background-color: rgb(198, 228, 248);
+}
+
+.service .service1 .box .center-2{
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    width: 300px;
+    height: 250px;
+    margin: 0 15px;
+    background-color: rgb(239, 248, 254);
+}
+
+.service .service1 .box .center-2 img{
+    position: relative;
+    float: left;
+    width: 85px;
+    height: auto;
+    top: 20px;
+    left: 15px;
+}
+
+.service .service1 .box .center-2 h2{
+    position: relative;
+    float: left;
+    top: 40px;
+    left: 40px;
+    color: rgb(65, 64, 66);
+}
+
+.service .service1 .box .center-2 .divider1{
+    position: relative;
+    float: left;
+    top: 45px;
+    left: 20px;
+    width: 250px;
+    height: 2px;
+    background-color:rgb(234, 239, 241);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    transform-origin: center;
+}
+
+.service .service1 .box .center-2 .neirong{
+    position: relative;
+    float: left;
+    top: 65px;
+    left: 25px;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(115, 114, 115);
+}
+
+.service .service1 .box .center-2:hover .divider1{
+    transform: scale(50%);
+    background-color: rgb(198, 228, 248);
+}
+
+.service .service1 .box .right{
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    width: 300px;
+    height: 250px;
+    margin: 0 15px;
+    background-color: rgb(239, 248, 254);
+}
+
+.service .service1 .box .right img{
+    position: relative;
+    float: left;
+    width: 85px;
+    height: auto;
+    top: 20px;
+    left: 15px;
+}
+
+.service .service1 .box .right h2{
+    position: relative;
+    float: left;
+    top: 40px;
+    left: 40px;
+    color: rgb(65, 64, 66);
+}
+
+.service .service1 .box .right .divider1{
+    position: relative;
+    float: left;
+    top: 45px;
+    left: 20px;
+    width: 250px;
+    height: 2px;
+    background-color:rgb(234, 239, 241);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    transform-origin: center;
+}
+
+.service .service1 .box .right .neirong{
+    position: relative;
+    float: left;
+    top: 65px;
+    left: 25px;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(115, 114, 115);
+}
+
+.service .service1 .box .right:hover .divider1{
+    transform: scale(50%);
+    background-color: rgb(198, 228, 248);
+}
+
+.service .service1 button{
+    position: relative;
+    top: 100px;
+    left: 0px;
+    width: 225px;
+    height: 65px;
+    color: rgb(65, 64, 66);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(180, 236, 97);
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+    border: 3px solid transparent;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease;
+    cursor: pointer;
+}
+
+.service .service1 button:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+/**/
+.banner2 {
+    width: 100%;
+    min-width: 1684px;
+    height: 450px;
+}
+
+.banner2 .imgs{
+    position: relative;
+    width: 1684px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner2 .imgs img{
+    position: relative;
+    top: -450px;
+}
+/**/
+.banner2 .imgs .content{
+    position: relative;
+    bottom: 975px;
+    left: 420px;
+    width: 850px;
+    height: 300px;
+    text-align: center;
+}
+
+.banner2 .imgs .content h2{
+    font-size: 35px;
+    color: white;
+}
+
+.banner2 .imgs .content p{
+    font-size: 20px;
+    margin-top: 35px;
+    color: white;
+}
+
+.banner2 .imgs button{
+    position: relative;
+    top: 50px;
+    left: 0px;
+    width: 190px;
+    height: 65px;
+    color: rgb(65, 64, 66);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(180, 236, 97);
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+    border: 3px solid transparent;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease;
+    cursor: pointer;
+}
+
+.banner2 .imgs button:hover{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+/**/
+.tubiao{
+    width: 100%;
+    height: 880px;
+}
+
+.tubiao .box{
+    width: 1684px;
+    height: 880px;
+    text-align: center;
+    margin:50px auto;
+    margin-top: 0px;
+    background-color: rgb(239, 248, 254);
+}
+
+.tubiao .box .title{
+    position: relative;
+    top: 100px;
+    left: 435px;
+    width: 820px;
+    height: 150px;
+    text-align: center;
+}
+
+.tubiao .box .title h1{
+    color: rgb(65, 64, 66);
+    font-size: 40px;
+}
+
+.tubiao .box .title .p1{
+    width: 1050px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    left: -110px;
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.tubiao .box img{
+    position: relative;
+    top: 50px;
+    left: -400px;
+    width: 650px;
+    height: auto;
+}
+
+.tubiao .box .right{
+    position: relative;
+    top: -525px;
+    left: 870px;
+    width: 600px;
+    height: 500px;
+    text-align: left;
+    background-color: rgb(239, 248, 254);
+}
+
+.tubiao .box .right .z1{
+    position: relative;
+    display: inline-block;
+    top: 40px;
+    margin-right: 35px;
+}
+
+.tubiao .box .right .z1 h2{
+    color: rgb(2, 180, 249);
+    font-size: 25px;
+}
+
+.tubiao .box .right .z1 p{
+    color: rgb(115, 114, 115);
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.tubiao .box .right .z2{
+    position: relative;
+    display: inline-block;
+    top: 40px;
+    margin-right: 35px;
+}
+
+.tubiao .box .right .z2 h2{
+    color: rgb(198, 75, 75);
+    font-size: 25px;
+}
+
+.tubiao .box .right .z2 p{
+    color: rgb(115, 114, 115);
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.tubiao .box .right .p1{
+    position: relative;
+    top: 85px;
+    width: 615px;
+    font-size: 17px;
+    color: rgb(115, 114, 115);
+}
+
+.tubiao .box .right button{
+    position: relative;
+    top: 150px;
+    width: 195px;
+    height: 65px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(2, 180, 249);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease;
+}
+
+.tubiao .box .right button:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+/**/
+.team{
+    width: 100%;
+    height: 900px;
+}
+
+.team .box{
+    width: 1684px;
+    height: 900px;
+    text-align: center;
+    margin:50px auto;
+}
+
+.team .box .title{
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    width: 820px;
+    height: 60px;
+    text-align: center;
+}
+
+.team .box .title h1{
+    color: rgb(65, 64, 66);
+    font-size: 40px;
+}
+
+.team .box .box1{
+    width: 1600px;
+    height: 625px;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.team .box .left{
+    position: relative;
+    display: inline-block;
+    top: 75px;
+    width: 325px;
+    height: 600px;
+    margin: 0 15px;
+    text-align: left;
+    background-color: white;
+}
+
+.team .box .left img{
+    float: left;
+    width: 325px;
+    height: 325px;
+}
+
+.team .box .left .c{
+    float: left;
+    width: 320px;
+    height: auto;
+}
+
+.team .box .left .c h2{
+    margin: 20px 0;
+    color: rgb(2, 180, 249);
+}
+
+.team .box .left .c i{
+    display: block;
+    margin-bottom: 45px;
+    font-size: 18px;
+    color: rgb(161, 161, 161);
+}
+
+.team .box .left .c p{
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.team .box .left .divider1{
+    position: relative;
+    float: left;
+    top: 120px;
+    width: 325px;
+    height: 2px;
+    background-color:rgb(234, 239, 241);
+}
+
+.team .box .left .cover{
+    position: relative;
+    top: -563px;
+    float: left;
+    width: 325px;
+    height: 325px;
+    text-align: center;
+    background-color: rgba(2, 180, 249,0);
+    transition: background-color 0.3s ease;
+}
+
+.team .box .left .cover .b{
+    position: relative;
+    top: 200px;
+    width: 325px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.team .box .left .cover .b .c1{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+    
+}
+
+.team .box .left .cover .b .c1 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .left .cover .b .c1:hover span{
+    color: white;
+}
+
+.team .box .left .cover .b .c1:hover{
+    background-color: rgb(59, 89, 152);
+}
+
+.team .box .left .cover:hover .c1{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.team .box .left .cover:not(:hover) .c1{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.05s;
+}
+
+.team .box .left .cover .b .c2{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .left .cover .b .c2 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .left .cover .b .c2:hover span{
+    color: white;
+}
+
+.team .box .left .cover .b .c2:hover{
+    background-color: rgb(29, 161, 242);
+}
+
+.team .box .left .cover:hover .c2{
+    opacity: 1;
+    transform: translateY(-5px);
+    transition-delay: 0.1s;
+}
+
+.team .box .left .cover:not(:hover) .c2{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.15s;
+}
+
+.team .box .left .cover .b .c3{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .left .cover .b .c3 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .left .cover .b .c3:hover span{
+    color: white;
+}
+
+.team .box .left .cover .b .c3:hover{
+    background-color: rgb(237, 73, 90);
+}
+
+.team .box .left .cover:hover .c3{
+    opacity: 1;
+    transform: translateY(-5px);
+    transition-delay: 0.15s;
+}
+
+.team .box .left .cover:not(:hover) .c3{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.25s;
+}
+
+.team .box .left .cover:hover{
+    background-color: rgba(2, 180, 249,0.8);
+}
+
+.team .box .center-1{
+    position: relative;
+    display: inline-block;
+    top: 75px;
+    width: 325px;
+    height: 600px;
+    margin: 0 15px;
+    text-align: left;
+    background-color: white;
+}
+
+.team .box .center-1 img{
+    float: left;
+    width: 325px;
+    height: auto;
+}
+
+.team .box .center-1 .c{
+    float: left;
+    width: 325px;
+    height: auto;
+}
+
+.team .box .center-1 .c h2{
+    margin: 20px 0;
+    color: rgb(2, 180, 249);
+}
+
+.team .box .center-1 .c i{
+    display: block;
+    margin-bottom: 45px;
+    font-size: 18px;
+    color: rgb(161, 161, 161);
+}
+
+.team .box .center-1 .c p{
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.team .box .center-1 .divider1{
+    position: relative;
+    float: left;
+    top: 120px;
+    width: 325px;
+    height: 2px;
+    background-color:rgb(234, 239, 241);
+}
+
+.team .box .center-1 .cover{
+    position: relative;
+    top: -539px;
+    float: left;
+    width: 325px;
+    height: 325px;
+    text-align: center;
+    background-color: rgba(2, 180, 249,0);
+    transition: background-color 0.3s ease;
+}
+
+.team .box .center-1 .cover .b{
+    position: relative;
+    top: 200px;
+    width: 325px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.team .box .center-1 .cover .b .c1{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .center-1 .cover .b .c1 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .center-1 .cover .b .c1:hover span{
+    color: white;
+}
+
+.team .box .center-1 .cover .b .c1:hover{
+    background-color: rgb(59, 89, 152);
+}
+
+.team .box .center-1 .cover:hover .c1{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.team .box .center-1 .cover:not(:hover) .c1{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.05s;
+}
+
+.team .box .center-1 .cover .b .c2{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .center-1 .cover .b .c2 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .center-1 .cover .b .c2:hover span{
+    color: white;
+}
+
+.team .box .center-1 .cover .b .c2:hover{
+    background-color: rgb(29, 161, 242);
+}
+
+.team .box .center-1 .cover:hover .c2{
+    opacity: 1;
+    transform: translateY(-5px);
+    transition-delay: 0.1s;
+}
+
+.team .box .center-1 .cover:not(:hover) .c2{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.15s;
+}
+
+.team .box .center-1 .cover .b .c3{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .center-1 .cover .b .c3 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .center-1 .cover .b .c3:hover span{
+    color: white;
+}
+
+.team .box .center-1 .cover .b .c3:hover{
+    background-color: rgb(237, 73, 90);
+}
+
+.team .box .center-1 .cover:hover .c3{
+    opacity: 1;
+    transform: translateY(-5px);
+    transition-delay: 0.15s;
+}
+
+.team .box .center-1 .cover:not(:hover) .c3{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.25s;
+}
+
+.team .box .center-1 .cover:hover{
+    background-color: rgba(2, 180, 249,0.8);
+}
+
+.team .box .center-2{
+    position: relative;
+    display: inline-block;
+    top: 75px;
+    width: 325px;
+    height: 600px;
+    margin: 0 15px;
+    text-align: left;
+    background-color: white;
+}
+
+.team .box .center-2 img{
+    float: left;
+    width: 325px;
+    height: auto;
+}
+
+.team .box .center-2 .c{
+    float: left;
+    width: 325px;
+    height: auto;
+}
+
+.team .box .center-2 .c h2{
+    margin: 20px 0;
+    color: rgb(2, 180, 249);
+}
+
+.team .box .center-2 .c i{
+    display: block;
+    margin-bottom: 45px;
+    font-size: 18px;
+    color: rgb(161, 161, 161);
+}
+
+.team .box .center-2 .c p{
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.team .box .center-2 .divider1{
+    position: relative;
+    float: left;
+    top: 120px;
+    width: 325px;
+    height: 2px;
+    background-color:rgb(234, 239, 241);
+}
+
+.team .box .center-2 .cover{
+    position: relative;
+    top: -539px;
+    float: left;
+    width: 325px;
+    height: 325px;
+    text-align: center;
+    background-color: rgba(2, 180, 249,0);
+    transition: background-color 0.3s ease;
+}
+
+.team .box .center-2 .cover .b{
+    position: relative;
+    top: 200px;
+    width: 325px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.team .box .center-2 .cover .b .c1{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .center-2 .cover .b .c1 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .center-2 .cover .b .c1:hover span{
+    color: white;
+}
+
+.team .box .center-2 .cover .b .c1:hover{
+    background-color: rgb(59, 89, 152);
+}
+
+.team .box .center-2 .cover:hover .c1{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.team .box .center-2 .cover:not(:hover) .c1{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.05s;
+}
+
+.team .box .center-2 .cover .b .c2{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .center-2 .cover .b .c2 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .center-2 .cover .b .c2:hover span{
+    color: white;
+}
+
+.team .box .center-2 .cover .b .c2:hover{
+    background-color: rgb(29, 161, 242);
+}
+
+.team .box .center-2 .cover:hover .c2{
+    opacity: 1;
+    transform: translateY(-5px);
+    transition-delay: 0.1s;
+}
+
+.team .box .center-2 .cover:not(:hover) .c2{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.15s;
+}
+
+.team .box .center-2 .cover .b .c3{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .center-2 .cover .b .c3 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .center-2 .cover .b .c3:hover span{
+    color: white;
+}
+
+.team .box .center-2 .cover .b .c3:hover{
+    background-color: rgb(237, 73, 90);
+}
+
+.team .box .center-2 .cover:hover .c3{
+    opacity: 1;
+    transform: translateY(-5px);
+    transition-delay: 0.15s;
+}
+
+.team .box .center-2 .cover:not(:hover) .c3{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.25s;
+}
+
+.team .box .center-2 .cover:hover{
+    background-color: rgba(2, 180, 249,0.8);
+}
+
+.team .box .right{
+    position: relative;
+    display: inline-block;
+    top: 75px;
+    width: 325px;
+    height: 600px;
+    margin: 0 15px;
+    text-align: left;
+    background-color: white;
+}
+
+.team .box .right img{
+    float: left;
+    width: 325px;
+    height: auto;
+}
+
+.team .box .right .c{
+    float: left;
+    width: 325px;
+    height: auto;
+}
+
+.team .box .right .c h2{
+    margin: 20px 0;
+    color: rgb(2, 180, 249);
+}
+
+.team .box .right .c i{
+    display: block;
+    margin-bottom: 45px;
+    font-size: 18px;
+    color: rgb(161, 161, 161);
+}
+
+.team .box .right .c p{
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.team .box .right .divider1{
+    position: relative;
+    float: left;
+    top: 120px;
+    width: 325px;
+    height: 2px;
+    background-color:rgb(234, 239, 241);
+}
+
+.team .box .right .cover{
+    position: relative;
+    top: -563px;
+    float: left;
+    width: 325px;
+    height: 325px;
+    text-align: center;
+    background-color: rgba(2, 180, 249,0);
+    transition: background-color 0.3s ease;
+}
+
+.team .box .right .cover .b{
+    position: relative;
+    top: 200px;
+    width: 325px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.team .box .right .cover .b .c1{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .right .cover .b .c1 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .right .cover .b .c1:hover span{
+    color: white;
+}
+
+.team .box .right .cover .b .c1:hover{
+    background-color: rgb(59, 89, 152);
+}
+
+.team .box .right .cover:hover .c1{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.team .box .right .cover:not(:hover) .c1{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.05s;
+}
+
+.team .box .right .cover .b .c2{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .right .cover .b .c2 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .right .cover .b .c2:hover span{
+    color: white;
+}
+
+.team .box .right .cover .b .c2:hover{
+    background-color: rgb(29, 161, 242);
+}
+
+.team .box .right .cover:hover .c2{
+    opacity: 1;
+    transform: translateY(-5px);
+    transition-delay: 0.1s;
+}
+
+.team .box .right .cover:not(:hover) .c2{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.15s;
+}
+
+.team .box .right .cover .b .c3{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    opacity: 0;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.25s ease,background-color 0.25s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.team .box .right .cover .b .c3 span{
+    font-size: 35px;
+    color: black;
+    transition: color 0.25s ease;
+}
+
+.team .box .right .cover .b .c3:hover span{
+    color: white;
+}
+
+.team .box .right .cover .b .c3:hover{
+    background-color: rgb(237, 73, 90);
+}
+
+.team .box .right .cover:hover .c3{
+    opacity: 1;
+    transform: translateY(-5px);
+    transition-delay: 0.15s;
+}
+
+.team .box .right .cover:not(:hover) .c3{
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 0.25s;
+}
+
+.team .box .right .cover:hover{
+    background-color: rgba(2, 180, 249,0.8);
+}
+
+.team .box button{
+    position: relative;
+    top: 60px;
+    left: 0px;
+    width: 225px;
+    height: 65px;
+    color: rgb(65, 64, 66);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(180, 236, 97);
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease;
+}
+
+.team .box button:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+/**/
+.blog{
+    width: 100%;
+    height: 315px;
+}
+
+.blog .box{
+    display: flex;
+    width: 1684px;
+    height: 315px;
+    margin: 50px auto;
+    margin-top: 0;
+}
+
+.blog .box .photo1{
+    position: relative;
+    width: 565px;
+    height: 365px;
+    overflow: hidden;
+}
+
+.blog .box .photo1 img{
+    position: absolute;
+    width: 565px;
+    height: auto;
+}
+
+.blog .box .photo1 .bt{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    width: 65px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: rgb(180,236,97);
+    border-radius: 5px;
+}
+
+.blog .box .photo1 .bt1{
+    position: relative;
+    top: -6px;
+    left: 435px;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    background-color: transparent;
+}
+
+.blog .box .photo1 .bt1 span{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.blog .box .photo1 .bt1 p{
+    position: relative;
+    display: inline-block;
+    top: -3px;
+    margin-left: 12px;
+}
+
+.blog .box .photo1 .up-down{
+    position: relative;
+    top: 130px;
+    left: 25px;
+    width: 475px;
+    height: 250px;
+    color: white;
+    background-color: transparent;
+    transition: top 0.25s ease;
+}
+
+.blog .box .photo1:hover .up-down{
+    top: 45px;
+}
+
+.blog .box .photo1 .up-down .c{
+    position: relative;
+    top: 20px;
+    width: 475px;
+    height: 50px;
+}
+.blog .box .photo1 .up-down .c span{
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+    font-size: 22px;
+}
+.blog .box .photo1 .up-down .c p{
+    position: relative;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.blog .box .photo1 .up-down button{
+    position: relative;
+    top: 35px;
+    left: 0px;
+    width: 140px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(2, 180, 249);
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+    border: 3px solid transparent;
+    opacity: 0;
+    transition: background-color 0.6s ease,border-color 0.6s ease,opacity 0.25s ease-out;
+    cursor: pointer;
+}
+
+.blog .box .photo1:hover .up-down button{
+    opacity: 1;
+}
+
+.blog .box .photo1 .up-down button:hover{
+    background-color: transparent;
+    border-color: white;
+}
+
+.blog .box .photo2{
+    position: relative;
+    width: 565px;
+    height: 365px;
+    overflow: hidden;
+}
+
+.blog .box .photo2 img{
+    position: absolute;
+    width: 565px;
+    height: auto;
+}
+
+.blog .box .photo2 .bt{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    width: 65px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: rgb(180,236,97);
+    border-radius: 5px;
+}
+
+.blog .box .photo2 .bt1{
+    position: relative;
+    top: -6px;
+    left: 435px;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    background-color: transparent;
+}
+
+.blog .box .photo2 .bt1 span{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.blog .box .photo2 .bt1 p{
+    position: relative;
+    display: inline-block;
+    top: -3px;
+    margin-left: 12px;
+}
+
+.blog .box .photo2 .up-down{
+    position: relative;
+    top: 175px;
+    left: 25px;
+    width: 475px;
+    height: 250px;
+    color: white;
+    background-color: transparent;
+    transition: top 0.25s ease;
+}
+
+.blog .box .photo2:hover .up-down{
+    top: 90px;
+}
+
+.blog .box .photo2:hover .up-down button{
+    opacity: 1;
+}
+
+.blog .box .photo2 .up-down .c{
+    position: relative;
+    top: 20px;
+    width: 475px;
+    height: 50px;
+}
+.blog .box .photo2 .up-down .c span{
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+    font-size: 22px;
+}
+.blog .box .photo2 .up-down .c p{
+    position: relative;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.blog .box .photo2 .up-down button{
+    position: relative;
+    top: 35px;
+    left: 0px;
+    width: 140px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(2, 180, 249);
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+    border: 3px solid transparent;
+    opacity: 0;
+    transition: background-color 0.6s ease,border-color 0.6s ease,opacity 0.25s ease-out;
+    cursor: pointer;
+}
+
+.blog .box .photo2 .up-down button:hover{
+    background-color: transparent;
+    border-color: white;
+}
+
+.blog .box .photo3{
+    position: relative;
+    width: 565px;
+    height: 365px;
+    overflow: hidden;
+}
+
+.blog .box .photo3 img{
+    position: absolute;
+    width: 565px;
+    height: auto;
+}
+
+.blog .box .photo3 .bt{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    width: 65px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: rgb(180,236,97);
+    border-radius: 5px;
+}
+
+.blog .box .photo3 .bt1{
+    position: relative;
+    top: -6px;
+    left: 435px;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    background-color: transparent;
+}
+
+.blog .box .photo3 .bt1 span{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.blog .box .photo3 .bt1 p{
+    position: relative;
+    display: inline-block;
+    top: -3px;
+    margin-left: 12px;
+}
+
+.blog .box .photo3 .up-down{
+    position: relative;
+    top: 175px;
+    left: 25px;
+    width: 480px;
+    height: 250px;
+    color: white;
+    background-color: transparent;
+    transition: top 0.25s ease;
+}
+
+.blog .box .photo3:hover .up-down{
+    top: 90px;
+}
+
+.blog .box .photo3:hover .up-down button{
+    opacity: 1;
+}
+
+.blog .box .photo3 .up-down .c{
+    position: relative;
+    top: 20px;
+    width: 475px;
+    height: 50px;
+}
+.blog .box .photo3 .up-down .c span{
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+    font-size: 22px;
+}
+.blog .box .photo3 .up-down .c p{
+    position: relative;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.blog .box .photo3 .up-down button{
+    position: relative;
+    top: 35px;
+    left: 0px;
+    width: 140px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(2, 180, 249);
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+    border: 3px solid transparent;
+    opacity: 0;
+    transition: background-color 0.6s ease,border-color 0.6s ease,opacity 0.25s ease-out;
+    cursor: pointer;
+}
+
+.blog .box .photo3 .up-down button:hover{
+    background-color: transparent;
+    border-color: white;
+}
+/**/
+.remark{
+    width: 100%;
+    height: 790px;
+}
+
+.remark .box{
+    width: 1684px;
+    height: 790px;
+    text-align: center;
+    margin:50px auto;
+    margin-top: 0px;
+    background-color: rgb(239, 248, 254);
+}
+
+.remark .box .title{
+    position: relative;
+    top: 125px;
+    left: 435px;
+    width: 820px;
+    height: 150px;
+    text-align: center;
+}
+
+.remark .box .title h1{
+    color: rgb(65, 64, 66);
+    font-size: 40px;
+}
+
+.remark .box .left{
+    position: relative;
+    display: inline-block;
+    top: 65px;
+    width: 310px;
+    height: 360px;
+    margin: 0 15px;
+    background-color: white;
+}
+
+.remark .box .left .kuai{
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 255px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: rgb(2, 180, 249);
+    transform: scale(-1, -1);
+    transition: transform 0.6s ease;
+}
+
+.remark .box .left .kuai span{
+    color: white;
+    font-size: 16px;
+}
+
+.remark .box .left .n1{
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 0px;
+    margin: 0 25px;
+    width: 255px;
+    height: auto;
+    text-align: left;
+}
+
+.remark .box .left .n1 h2{
+    color: rgb(65, 64, 66);
+}
+
+.remark .box .left .n1 p{
+    margin-top: 15px;
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.remark .box .left .tu{
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 0px;
+    margin: 0 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.remark .box .left .tu img{
+    width: 100%;
+    height: 100%;
+}
+
+.remark .box .left .n2{
+    position: relative;
+    float: left;
+    top: -55px;
+    left: 100px;
+    margin: 0 25px;
+    width: 165px;
+    height: 100px;
+    text-align: left;
+}
+
+.remark .box .left .n2 h2{
+    margin-bottom: 3px;
+    font-size: 19px;
+    color: rgb(2, 180, 249);
+}
+
+.remark .box .left .n2 i{
+    font-size: 16px;
+    color: rgba(161, 161, 161,0.8);
+}
+
+.remark .box .left:hover .kuai{
+    transform: rotateX(180deg);
+}
+
+.remark .box .center-1{
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    width: 310px;
+    height: 325px;
+    margin: 0 15px;
+    background-color: white;
+}
+
+.remark .box .center-1 .kuai{
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 255px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: rgb(2, 180, 249);
+    transform: scale(-1, -1);
+    transition: transform 0.6s ease;
+}
+
+.remark .box .center-1 .kuai span{
+    color: white;
+    font-size: 16px;
+}
+
+.remark .box .center-1 .n1{
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 0px;
+    margin: 0 25px;
+    width: 265px;
+    height: auto;
+    text-align: left;
+}
+
+.remark .box .center-1 .n1 h2{
+    color: rgb(65, 64, 66);
+}
+
+.remark .box .center-1 .n1 p{
+    margin-top: 15px;
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.remark .box .center-1 .tu{
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 0px;
+    margin: 0 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.remark .box .center-1 .tu img{
+    width: 100%;
+    height: 100%;
+}
+
+.remark .box .center-1 .n2{
+    position: relative;
+    float: left;
+    top: -45px;
+    left: 100px;
+    margin: 0 25px;
+    width: 200px;
+    height: 80px;
+    text-align: left;
+}
+
+.remark .box .center-1 .n2 h2{
+    margin-bottom: 3px;
+    font-size: 19px;
+    color: rgb(2, 180, 249);
+}
+
+.remark .box .center-1 .n2 i{
+    font-size: 16px;
+    color: rgba(161, 161, 161,0.8);
+}
+
+.remark .box .center-1:hover .kuai{
+    transform: rotateX(180deg);
+}
+
+.remark .box .center-2{
+    position: relative;
+    display: inline-block;
+    top: 65px;
+    width: 310px;
+    height: 360px;
+    margin: 0 15px;
+    background-color: white;
+}
+
+.remark .box .center-2 .kuai{
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 255px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: rgb(2, 180, 249);
+    transform: scale(-1, -1);
+    transition: transform 0.6s ease;
+}
+
+.remark .box .center-2 .kuai span{
+    color: white;
+    font-size: 16px;
+}
+
+.remark .box .center-2 .n1{
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 0px;
+    margin: 0 25px;
+    width: 265px;
+    height: auto;
+    text-align: left;
+}
+
+.remark .box .center-2 .n1 h2{
+    color: rgb(65, 64, 66);
+}
+
+.remark .box .center-2 .n1 p{
+    margin-top: 15px;
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.remark .box .center-2 .tu{
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 0px;
+    margin: 0 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.remark .box .center-2 .tu img{
+    width: 100%;
+    height: 100%;
+}
+
+.remark .box .center-2 .n2{
+    position: relative;
+    float: left;
+    top: -55px;
+    left: 100px;
+    margin: 0 25px;
+    width: 140px;
+    height: 100px;
+    text-align: left;
+}
+
+.remark .box .center-2 .n2 h2{
+    font-size: 19px;
+    color: rgb(2, 180, 249);
+}
+
+.remark .box .center-2 .n2 i{
+    font-size: 16px;
+    color: rgba(161, 161, 161,0.8);
+}
+
+.remark .box .center-2:hover .kuai{
+    transform: rotateX(180deg);
+}
+
+.remark .box .right{
+    position: relative;
+    display: inline-block;
+    top: 65px;
+    width: 310px;
+    height: 360px;
+    margin: 0 15px;
+    background-color: white;
+}
+
+.remark .box .right .kuai{
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 255px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: rgb(2, 180, 249);
+    transform: scale(-1, -1);
+    transition: transform 0.6s ease;
+}
+
+.remark .box .right .kuai span{
+    color: white;
+    font-size: 16px;
+}
+
+.remark .box .right .n1{
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 0px;
+    margin: 0 25px;
+    width: 269px;
+    height: auto;
+    text-align: left;
+}
+
+.remark .box .right .n1 h2{
+    color: rgb(65, 64, 66);
+}
+
+.remark .box .right .n1 p{
+    margin-top: 15px;
+    font-size: 18px;
+    color: rgb(115, 114, 115);
+}
+
+.remark .box .right .tu{
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 0px;
+    margin: 0 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.remark .box .right .tu img{
+    width: 100%;
+    height: 100%;
+}
+
+.remark .box .right .n2{
+    position: relative;
+    float: left;
+    top: -55px;
+    left: 100px;
+    margin: 0 25px;
+    width: 165px;
+    height: 100px;
+    text-align: left;
+}
+
+.remark .box .right .n2 h2{
+    margin-bottom: 3px;
+    font-size: 19px;
+    color: rgb(2, 180, 249);
+}
+
+.remark .box .right .n2 i{
+    font-size: 16px;
+    color: rgba(161, 161, 161,0.8);
+}
+
+.remark .box .right:hover .kuai{
+    transform: rotateX(180deg);
+}
+
+.remark .box .anniu button{
+    position: relative;
+    top: 150px;
+    left: 0px;
+    width: 225px;
+    height: 65px;
+    color: rgb(65, 64, 66);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(180, 236, 97);
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: background-color 0.6s ease,color 0.6s ease,border-color 0.6s ease;
+}
+
+.remark .box .anniu button:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+/**/
+.brand{
+    width: 100%;
+    height: 300px;
+}
+
+.brand .box{
+    position: relative;
+    display: flex;
+    top: 100px;
+    width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.brand .box1{
+    width: 1684px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.brand .box img{
+    width: 200px;
+    height: auto;
+    transform: scale(0.93);
+    cursor: pointer;
+}
+
+.brand .box .one{
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 15px;
+    overflow: hidden;
+    opacity: 0.3;
+    transition: opacity 0.6s ease;
+}
+
+.brand .box .one:hover{
+    opacity: 1;
+}
+
+.brand .box .two{
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 15px;
+    overflow: hidden;
+    opacity: 0.3;
+    transition: opacity 0.6s ease;
+}
+
+.brand .box .two:hover{
+    opacity: 1;
+}
+
+.brand .box .three{
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 15px;
+    overflow: hidden;
+    opacity: 0.3;
+    transition: opacity 0.6s ease;
+}
+
+.brand .box .three:hover{
+    opacity: 1;
+}
+
+.brand .box .four{
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 15px;
+    overflow: hidden;
+    opacity: 0.3;
+    transition: opacity 0.6s ease;
+}
+
+.brand .box .four:hover{
+    opacity: 1;
+}
+
+.brand .box .five{
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 15px;
+    overflow: hidden;
+    opacity: 0.3;
+    transition: opacity 0.6s ease;
+}
+
+.brand .box .five:hover{
+    opacity: 1;
+}
+
+.brand .box .six{
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 15px;
+    overflow: hidden;
+    opacity: 0.3;
+    transition: opacity 0.6s ease;
+}
+
+.brand .box .six:hover{
+    opacity: 1;
+}
+
+/**/
+.bottom{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box{
+    width: 1684px;
+    height: 650px;
+    margin: 0 auto;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .bottom1{
+    position: relative;
+    display: flex;
+    top: 100px;
+    width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: rgb(34, 53, 73);
+}
+#map{
+    position: relative;
+    top: 75px;
+    margin: 0 auto;
+    width: 1200px;
+    height: 175px;
+}
+
+.bottom .box .left{
+    display: inline-block;
+    width: 375px;
+    height: 300px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .center{
+    display: inline-block;
+    width: 375px;
+    height: 300px;
+    margin:0 37px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .right{
+    display: inline-block;
+    width: 375px;
+    height: 300px;
+    background-color: rgb(34, 53, 73);
+}
+
+.bottom .box .left p{
+    position: relative;
+    top: 20px;
+    padding: 0 285px 0 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottom .box .left .left1{
+    position: relative;
+    display: inline-block;
+    width: 325px;
+    height: 120px;
+    top: 60px;
+    text-align: left;
+    font-size: 16px;
+    color: rgb(200, 200, 200);
+}
+
+.bottom .box .left .left1 li{
+    margin-bottom: 12px;
+}
+
+.bottom .box .left .icon{
+    position: relative;
+    display: inline-block;
+    top: 32px;
+    left: -3px;
+    width: 36px;
+    height: 120px;
+}
+
+.bottom .box .left .icon span{
+    font-size: 25px;
+    color: rgb(180, 236, 97);
+}
+
+.bottom .box .left .left2{
+    position: relative;
+    top: 35px;
+    left: -8px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.bottom .box .left .left2 span{
+    font-size: 25px;
+    margin-right: 20px;
+    color: rgb(115,114,115);
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.bottom .box .left .left2 .icon-facebook:hover{
+    color: rgb(59, 89, 152);
+}
+.bottom .box .left .left2 .icon-twitter-fill:hover{
+    color: rgb(29, 161, 242);
+}
+.bottom .box .left .left2 .icon-instagram:hover{
+    color: rgb(237, 73, 90);
+}
+.bottom .box .left .left2 .icon-google:hover{
+    color: rgb(219, 68, 55);
+}
+.bottom .box .left .left2 .icon-pinterest:hover{
+    color: rgb(189, 8, 28);
+}
+.bottom .box .left .left2 .icon-linkedin:hover{
+    color: rgb(0, 119, 181);
+}
+
+.bottom .box .center .center1{
+    position: relative;
+    width: 325px;
+    height: 200px;
+    top: 59px;
+    left: 5px;
+    color: rgb(200, 200, 200);
+}
+
+.bottom .box .center p{
+    position: relative;
+    padding: 0 285px 0 0;
+    top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottom .box .center .center1 li{
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.bottom .box .center .center1 li a{
+    color: rgb(163, 217, 95);
+}
+
+.bottom .box .center .center1 li a:hover{
+    color: rgb(2, 180, 249);
+}
+
+.bottom .box .center .center1 span{
+    font-size: 18px;
+    color: rgb(200, 200, 200);
+    margin-right: 20px;
+}
+
+.bottom .box .right .p1{
+    position: relative;
+    padding: 0 330px 0 0;
+    top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottom .box .right .right1{
+    position: relative;
+    width: 375px;
+    height: 50px;
+    top: 60px;
+    color: rgb(200, 200, 200);
+}
+
+.bottom .box .right .dingyue{
+    position: relative;
+    top: 75px;
+    width: 375px;
+    height: 50px;
+    text-align: left;
+}
+
+.bottom .box .right .dingyue input[type=text]{
+    width: 375px;
+    height: 45px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.bottom .box .right .dingyue input[type=submit]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 45px;
+    font-weight: 600;
+    background-color: rgb(2, 180, 249);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.bottom .box .right .dingyue input[type=submit]:hover{
+    background-color: rgb(0, 150, 224);
+}
+
+.bottom .box .bottom1 .divider{
+    position: relative;
+    top: 31px;
+    width: 375px;
+    height: 1px;
+    background: linear-gradient(to right, rgb(18,116,161) 10%, rgb(45,63,82) 10%);
+}
+/**/
+#top{
+    position: fixed;
+    bottom: -75px;
+    right: 50px;
+    width: 65px;
+    height: 65px;
+    border: none;
+    outline: none;
+    background-color: rgb(2, 180, 249);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: bottom 0.25s;
+    z-index: 99;
+}
+
+#top span{
+    color: white;
+    font-size: 35px;
+}
